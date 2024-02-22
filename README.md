@@ -1,6 +1,6 @@
 # Project Title
 
-Savings COntract.
+Savings Contract.
 
 ## Description
 
