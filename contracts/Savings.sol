@@ -43,7 +43,7 @@ contract SAVINGS {
     }
 
     function withdrawToAnotherAddress(uint256 amount, address addr) external {
-        assert(amount >= addressToBalance[msg.sender]);
+        assert(amount <= addressToBalance[msg.sender]);
 
         addressToBalance[msg.sender] = addressToBalance[msg.sender] - amount;
         (bool success,) = addr.call{value: amount}("");

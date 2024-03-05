@@ -26,10 +26,10 @@ describe("SAVINGS", function () {
 
     await savings.deposit({ value: ethers.parseEther("10") });
     //await savings.withdraw(ethers.parseEther("15"));
-    /*  await savings.withdrawToAnotherAddress(
-      ethers.parseEther("5"),
+    await savings.withdrawToAnotherAddress(
+      ethers.parseEther("11"),
       user1.address
-    ); */
+    );
 
     //console.log(await ethers.provider.getBalance(owner.address));
     //console.log(await ethers.provider.getBalance(user1.address));
